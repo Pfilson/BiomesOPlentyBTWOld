@@ -20,7 +20,7 @@ public class BiomeGenJadeCliffs extends BiomeGenBase
 		customBiomeDecorator = (BiomeDecoratorBOP)theBiomeDecorator;
 		customBiomeDecorator.treesPerChunk = 12;
 		customBiomeDecorator.grassPerChunk = 3;
-		customBiomeDecorator.carrotsPerChunk = 1;
+		//customBiomeDecorator.carrotsPerChunk = 1;
 	}
 	
 	@Override

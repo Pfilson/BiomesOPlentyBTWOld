@@ -13,23 +13,23 @@ def bop_main(bop_dir, mcp_dir):
     
     print '=============================== Build Biomes O Plenty Start ====================================='
 
-    print 'Copying BOP Files'
+    print '-=Copying BOP Files=-'
     copytree(os.path.join(bop_dir, 'src'), os.path.join(mcp_dir, 'src')) 
     os.chdir(mcp_dir)
     reset_logger()
-    print 'Recompiling'
+    print '-=Recompiling=-'
     recompile(None, False, False)
     reset_logger()
-    print 'Reobfuscating'
+    print '-=Reobfuscating=-'
     reobfuscate(None, False, False, False, False, False, False)
     reset_logger()
-    print 'Copying Reobfuscated Files'
+    print '-=Copying Reobfuscated Files=-'
     copyreobfuscatedfiles(bop_dir, mcp_dir)
-    print 'Unzipping BTW & Copying Files'
-    unzipandcopybtw(bop_dir)
-    print 'Creating Binary Patches'
-    updatepatches()
-    print 'Cleaning Up'
+    #print 'Unzipping BTW & Copying Files'
+    #unzipandcopybtw(bop_dir)
+    #print 'Creating Binary Patches'
+    #updatepatches()
+    print '-=Cleaning Up=-'
     cleanup(bop_dir, mcp_dir)
 
     print '=============================== Build Biomes O Plenty Finished ================================='

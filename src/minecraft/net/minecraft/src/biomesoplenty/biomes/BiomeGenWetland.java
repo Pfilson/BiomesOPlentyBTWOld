@@ -5,6 +5,7 @@ import java.util.Random;
 import net.minecraft.src.BiomeGenBase;
 import net.minecraft.src.Block;
 import net.minecraft.src.EntitySlime;
+import net.minecraft.src.EntityWitch;
 import net.minecraft.src.SpawnListEntry;
 import net.minecraft.src.World;
 import net.minecraft.src.WorldGenTallGrass;
@@ -45,6 +46,7 @@ public class BiomeGenWetland extends BiomeGenBase
 		spawnableCreatureList.clear();
 		spawnableWaterCreatureList.clear();
 		spawnableMonsterList.add(new SpawnListEntry(EntitySlime.class, 10, 1, 3));
+		spawnableMonsterList.add(new SpawnListEntry(EntityWitch.class, 5, 1, 1));
 		waterColorMultiplier = 6512772;
 	}
 

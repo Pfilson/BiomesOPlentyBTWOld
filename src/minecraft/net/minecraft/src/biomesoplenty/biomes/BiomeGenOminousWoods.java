@@ -7,8 +7,9 @@ import net.minecraft.src.Block;
 import net.minecraft.src.EntityBat;
 import net.minecraft.src.EntityCaveSpider;
 import net.minecraft.src.EntityEnderman;
+import net.minecraft.src.EntitySkeleton;
 import net.minecraft.src.EntitySpider;
-import net.minecraft.src.FCEntityWolfDire;
+import net.minecraft.src.EntityZombie;
 import net.minecraft.src.SpawnListEntry;
 import net.minecraft.src.WorldGenTallGrass;
 import net.minecraft.src.WorldGenerator;
@@ -40,10 +41,10 @@ public class BiomeGenOminousWoods extends BiomeGenBase
 		spawnableMonsterList.clear();
 		spawnableCreatureList.clear();
 		spawnableWaterCreatureList.clear();
-		spawnableMonsterList.add(new SpawnListEntry(EntityCaveSpider.class, 7, 1, 2));
+		spawnableMonsterList.add(new SpawnListEntry(EntityCaveSpider.class, 5, 1, 2));
 		spawnableMonsterList.add(new SpawnListEntry(EntitySpider.class, 9, 1, 2));
 		spawnableMonsterList.add(new SpawnListEntry(EntityEnderman.class, 10, 1, 4));
-		spawnableMonsterList.add(new SpawnListEntry(FCEntityWolfDire.class, 1, 1, 1));
+		spawnableMonsterList.add(new SpawnListEntry(EntitySkeleton.class, 7, 1, 2));
 		spawnableCaveCreatureList.add(new SpawnListEntry(EntityBat.class, 10, 8, 8));
 	}
 

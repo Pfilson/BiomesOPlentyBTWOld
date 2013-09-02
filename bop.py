@@ -201,9 +201,9 @@ def recompile(conffile, only_client, only_server):
 #                      Binary Patch Setup
 #==========================================================================
 def copyreobfuscatedfiles(bop_dir, mcp_dir):
-    basediff = os.path.join(bop_dir, 'basediff')
-    minecraft_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT-JAR')
-    minecraft_server_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT_SERVER-JAR')
+    basediff = os.path.join(bop_dir, 'BoP-Release')
+    minecraft_jar_loc = os.path.join(basediff, 'MINECRAFT-JAR')
+    minecraft_server_jar_loc = os.path.join(basediff, 'MINECRAFT_SERVER-JAR')
 
     if os.path.exists(minecraft_jar_loc):
         shutil.rmtree(minecraft_jar_loc)
@@ -232,23 +232,23 @@ def unzipandcopybtw(bop_dir):
 #                     Cleanup
 #==========================================================================
 def cleanup(bop_dir, mcp_dir):
-    basediff = os.path.join(bop_dir, 'basediff')
-    btw_minecraft_jar_loc = os.path.join(basediff, 'base', 'MINECRAFT-JAR')
-    btw_minecraft_server_jar_loc = os.path.join(basediff, 'base', 'MINECRAFT_SERVER-JAR')
-    work_minecraft_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT-JAR')
-    work_minecraft_server_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT_SERVER-JAR')
+    #basediff = os.path.join(bop_dir, 'basediff')
+    #btw_minecraft_jar_loc = os.path.join(basediff, 'base', 'MINECRAFT-JAR')
+    #btw_minecraft_server_jar_loc = os.path.join(basediff, 'base', 'MINECRAFT_SERVER-JAR')
+    #work_minecraft_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT-JAR')
+    #work_minecraft_server_jar_loc = os.path.join(basediff, 'work', 'MINECRAFT_SERVER-JAR')
     bop_mcp_csrc_loc = os.path.join(mcp_dir, 'src', 'minecraft', 'net', 'minecraft', 'src', 'biomesoplenty')
     bop_mcp_ssrc_loc = os.path.join(mcp_dir, 'src', 'minecraft_server', 'net', 'minecraft', 'src', 'biomesoplenty')
     
-    if os.path.exists(btw_minecraft_jar_loc):
-        shutil.rmtree(btw_minecraft_jar_loc)
-    if os.path.exists(btw_minecraft_server_jar_loc):
-        shutil.rmtree(btw_minecraft_server_jar_loc)
+    #if os.path.exists(btw_minecraft_jar_loc):
+    #    shutil.rmtree(btw_minecraft_jar_loc)
+    #if os.path.exists(btw_minecraft_server_jar_loc):
+    #    shutil.rmtree(btw_minecraft_server_jar_loc)
         
-    if os.path.exists(work_minecraft_jar_loc):
-        shutil.rmtree(work_minecraft_jar_loc)
-    if os.path.exists(work_minecraft_server_jar_loc):
-        shutil.rmtree(work_minecraft_server_jar_loc)
+    #if os.path.exists(work_minecraft_jar_loc):
+    #    shutil.rmtree(work_minecraft_jar_loc)
+    #if os.path.exists(work_minecraft_server_jar_loc):
+    #    shutil.rmtree(work_minecraft_server_jar_loc)
         
     if os.path.exists(bop_mcp_csrc_loc):
         shutil.rmtree(bop_mcp_csrc_loc)
