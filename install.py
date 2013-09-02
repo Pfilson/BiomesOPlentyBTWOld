@@ -12,16 +12,23 @@ def bop_main(bop_dir, mcp_dir):
     
     print '=============================== Biomes O Plenty Setup Start ====================================='
 
-    print 'Decompiling'
+    print '-=Decompiling=-'
     decompile(mcp_dir, bop_dir)
-    print 'Applying patches'
+    print ' '
+    print '-=Applying patches=-'
     apply_initial_patches(mcp_dir, bop_dir, os.path.join(mcp_dir, 'src'), True)
     os.chdir(mcp_dir)
     reset_logger()
+    print ''
+    print '-=Update MD5=-'
     updatemd5(None, True, False, False)
     reset_logger()
+    print ''
+    print '-=Copy Src=-'
     copytree(os.path.join(mcp_dir, 'src'), os.path.join(mcp_dir, 'src_base')) 
-    os.chdir(bop_dir) 
+    os.chdir(bop_dir)
+    print ''
+    print '-=Apply BoP Patches=-'
     apply_bop_patches(mcp_dir, bop_dir, os.path.join(mcp_dir, 'src'), True)  
     shutil.rmtree(os.path.join(mcp_dir, 'eclipse'))
     copytree(os.path.join(bop_dir, 'tmpworkspace'), os.path.join(mcp_dir, 'eclipse')) 

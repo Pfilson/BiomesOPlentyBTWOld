@@ -161,7 +161,7 @@ def decompile(mcp_dir, bop_dir):
             shutil.rmtree(os.path.join(mcp_dir, 'src_base'))
     
     reset_logger()
-    decompile(None, False, False, False, False, False, False, False, False, False, False, False, False)
+    decompile(None, False, False, True, False, False, False, False, False, False, False, False, False)
     reset_logger()    
     os.chdir(bop_dir) 
     
