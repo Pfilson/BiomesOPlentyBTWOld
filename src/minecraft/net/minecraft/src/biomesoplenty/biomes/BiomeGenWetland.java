@@ -46,7 +46,7 @@ public class BiomeGenWetland extends BiomeGenBase
 		spawnableCreatureList.clear();
 		spawnableWaterCreatureList.clear();
 		spawnableMonsterList.add(new SpawnListEntry(EntitySlime.class, 10, 1, 3));
-		spawnableMonsterList.add(new SpawnListEntry(EntityWitch.class, 5, 1, 1));
+		spawnableMonsterList.add(new SpawnListEntry(EntityWitch.class, 2, 1, 1));
 		waterColorMultiplier = 6512772;
 	}
 

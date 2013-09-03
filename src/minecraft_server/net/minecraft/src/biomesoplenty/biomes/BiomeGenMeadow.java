@@ -20,7 +20,7 @@ public class BiomeGenMeadow extends BiomeGenBase
 		theBiomeDecorator = new BiomeDecoratorBOP(this);
 		customBiomeDecorator = (BiomeDecoratorBOP)theBiomeDecorator;
 		customBiomeDecorator.treesPerChunk = 2;
-		customBiomeDecorator.grassPerChunk = 10;
+		customBiomeDecorator.grassPerChunk = 9;
 		//customBiomeDecorator.tinyFlowersPerChunk = 14;
 		customBiomeDecorator.flowersPerChunk = 10;
 		customBiomeDecorator.carrotsPerChunk = 1;
@@ -28,7 +28,7 @@ public class BiomeGenMeadow extends BiomeGenBase
 		customBiomeDecorator.sandPerChunk2 = -999;
 		//customBiomeDecorator.hydrangeasPerChunk = 3;
 		//ustomBiomeDecorator.sunflowersPerChunk = 1;
-		customBiomeDecorator.generatePumpkins = false;
+		customBiomeDecorator.generatePumpkins = true;
 	}
 	
 	@Override

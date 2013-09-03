@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.src.BiomeGenBase;
 import net.minecraft.src.EntitySlime;
+import net.minecraft.src.EntityWitch;
 import net.minecraft.src.SpawnListEntry;
 import net.minecraft.src.World;
 import net.minecraft.src.WorldGenerator;
@@ -30,7 +31,9 @@ public class BiomeGenLushSwamp extends BiomeGenBase
 		//customBiomeDecorator.reedsBOPPerChunk = 5;
 		//customBiomeDecorator.poisonWaterPerChunk = 2;
 		//customBiomeDecorator.carrotsPerChunk = 1;
-		spawnableMonsterList.add(new SpawnListEntry(EntitySlime.class, 1, 1, 1));
+		spawnableMonsterList.add(new SpawnListEntry(EntitySlime.class, 2, 1, 2));
+		spawnableMonsterList.add(new SpawnListEntry(EntityWitch.class, 1, 1, 1));
+
 	}
 	
 	@Override
